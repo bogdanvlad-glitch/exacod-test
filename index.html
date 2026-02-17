@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExaCode — Digital Engineering</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<style>
+:root{
+  --bg:#0b0f1a;
+  --card:rgba(255,255,255,0.08);
+  --border:rgba(255,255,255,0.15);
+  --text:#f8fafc;
+  --muted:#94a3b8;
+  --primary:#6366f1;
+  --secondary:#22d3ee;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{
+  background:
+    radial-gradient(circle at top left,#1e293b,transparent 40%),
+    radial-gradient(circle at bottom right,#020617,transparent 40%),
+    var(--bg);
+  color:var(--text);
+}
+
+.container{max-width:1100px;margin:auto;padding:80px 20px;}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:900;
+  font-size:22px;
+}
+
+.logo img{height:40px;border-radius:8px;}
+
+nav a{color:var(--muted);margin-left:25px;text-decoration:none;}
+nav a:hover{color:white}
+
+/* HERO IMAGE */
+.hero-img{
+  background:url('assets/img/hero.jpg') center/cover;
+  position:relative;
+  padding:180px 20px;
+}
+
+.hero-img::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size:56px;
+  font-weight:900;
+}
+
+.hero-content span{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* GLASS */
+.glass{
+  background:var(--card);
+  border:1px solid var(--border);
+  backdrop-filter:blur(16px);
+  border-radius:22px;
+  padding:50px;
+  margin-top:70px;
+  box-shadow:0 40px 80px rgba(0,0,0,.4);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:40px;
+}
+
+.team-img{
+  width:100px;height:100px;border-radius:50%;
+  object-fit:cover;margin-bottom:20px;
+}
+
+.image-band{
+  height:50vh;
+  background:url('assets/img/office.jpg') center/cover;
+  margin:100px 0;
+  border-radius:20px;
+}
+
+.contact{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  border-radius:30px;
+  padding:70px;
+  color:#020617;
+  text-align:center;
+  margin-top:80px;
+}
+
+footer{
+  text-align:center;
+  margin-top:80px;
+  color:var(--muted);
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="container">
+  <div class="logo">
+    <img src="assets/img/logo.png">
+    ExaCode
+  </div>
+</header>
+
+<section class="hero-img">
+  <div class="hero-content container">
+    <h1>EXACODE — <span>Digital Structure</span></h1>
+  </div>
+</section>
+
+<!-- PRESENTATION GENERALE -->
+<div class="container glass">
+<h2>EXACODE — PRESENTATION GÉNÉRALE</h2>
+<p>ExaCode est une structure indépendante spécialisée dans le développement web et la conception d’identités digitales.
+L’objectif principal n’est pas uniquement la production de sites internet, mais la création d’environnements numériques stables, lisibles et durables.</p>
+
+<p>La philosophie d’ExaCode repose sur une approche structurée : chaque projet est considéré comme un système cohérent plutôt qu’un simple support visuel. Cette logique permet de garantir une continuité technique et une évolutivité sur le long terme.</p>
+
+<p>ExaCode s’adresse aussi bien aux particuliers qu’aux petites structures professionnelles souhaitant établir ou renforcer leur présence numérique. L’accent est mis sur la clarté, la performance et la maintenabilité plutôt que sur des effets visuels éphémères ou des tendances graphiques instables.</p>
+</div>
+
+<!-- POSITIONNEMENT -->
+<div class="container glass">
+<h2>POSITIONNEMENT & VISION</h2>
+<p>ExaCode ne se positionne pas comme une simple entité de création de sites, mais comme une structure orientée “ingénierie digitale”.
+La vision consiste à considérer chaque plateforme web comme une base technique capable d’évoluer, d’être adaptée et maintenue sans dépendances inutiles.</p>
+
+<p>L’approche vise à réduire la complexité superflue, à privilégier la lisibilité du code et à maintenir une cohérence visuelle et fonctionnelle.
+Le but n’est pas de produire rapidement, mais de produire durablement.</p>
+</div>
+
+<!-- DOMAINES -->
+<div class="container glass">
+<h2>DOMAINES D’INTERVENTION</h2>
+<p>Développement Web — Création de sites vitrines, plateformes multi-sections, pages d’atterrissage et environnements digitaux personnalisés.
+Chaque projet est conçu sur mesure, sans dépendance à des modèles rigides.</p>
+
+<p>Design d’Interface — Structuration visuelle, hiérarchie des informations, cohérence graphique et lisibilité.
+Le design est pensé comme un outil fonctionnel plutôt qu’un élément décoratif.</p>
+
+<p>Identité Visuelle — Création de logos, systèmes visuels et éléments graphiques destinés à renforcer la reconnaissance et la cohérence d’une entité ou d’un projet.</p>
+
+<p>Optimisation & Structure — Amélioration des performances, compatibilité multi-appareils, organisation du contenu et stabilité technique.</p>
+</div>
+
+<!-- METHODOLOGIE -->
+<div class="container glass">
+<h2>MÉTHODOLOGIE & PROCESSUS</h2>
+<p>Le fonctionnement d’ExaCode suit une progression méthodique conçue pour réduire l’incertitude et maximiser la clarté.</p>
+
+<p>01 — Analyse<br>
+Compréhension précise des attentes, du contexte d’utilisation et des contraintes.
+Cette étape permet de définir la direction globale du projet et d’éviter des ajustements majeurs ultérieurs.</p>
+
+<p>02 — Structuration<br>
+Organisation logique des sections, définition de la navigation et hiérarchisation des informations.
+L’objectif est de créer un environnement compréhensible dès le premier regard.</p>
+
+<p>03 — Conception Visuelle<br>
+Établissement d’une cohérence graphique basée sur la lisibilité et l’équilibre visuel.
+Les éléments décoratifs sont volontairement limités afin de préserver la clarté.</p>
+
+<p>04 — Développement<br>
+Implémentation technique avec attention portée à la propreté du code, à la performance et à la compatibilité.
+Les technologies sont sélectionnées pour leur stabilité plutôt que pour leur nouveauté.</p>
+
+<p>05 — Vérification & Livraison<br>
+Tests de fonctionnement, ajustements finaux et validation de la cohérence globale.
+L’objectif final est la fiabilité, non la simple complétion.</p>
+</div>
+
+<!-- PRINCIPES -->
+<div class="container glass">
+<h2>PRINCIPES FONDAMENTAUX</h2>
+<p>Clarté — Les informations doivent être compréhensibles immédiatement.</p>
+<p>Stabilité — Les solutions doivent rester fonctionnelles dans le temps.</p>
+<p>Maintenabilité — Les structures doivent pouvoir évoluer sans refonte complète.</p>
+<p>Lisibilité — Le code comme l’interface doivent être structurés et cohérents.</p>
+<p>Simplicité — Réduction volontaire de la complexité inutile.</p>
+</div>
+
+<!-- CONTACT -->
+<div class="container contact">
+<h2>Contact</h2>
+<p>📞 470 11 27 45</p>
+<p>📧 exacodeofficial@gmail.com</p>
+</div>
+
+<footer>
+© 2026 ExaCode — Tous droits réservés
+</footer>
+
+</body>
+</html>
+
